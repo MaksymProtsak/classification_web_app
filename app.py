@@ -1,7 +1,7 @@
 import os
 
 import tensorflow as tf
-from flask import Flask, request
+from flask import Flask, request, render_template
 
 from classifire import classify
 
@@ -16,10 +16,7 @@ cnn_model = tf.keras.models.load_model(STATIC_FOLDER + "/models/" + "save_at_49.
 @app.route("/")
 def home():
     img_name = "/static/images/cat-dog.jpg"
-    return (''
-            f'<body style="background-image: url({img_name});>'
-            '<p">Hello world!</p>'
-            '')
+    return render_template('index.html')
 
 
 @app.post("/classify")
@@ -32,10 +29,7 @@ def upload_file():
 
     prob = round((float(prob) * 100), 2)
 
-    return {
-        "label": label,
-        "probability": prob
-    }
+    return render_template("result.html", label=label, probability=prob)
 
 
 if __name__ == "__main__":
