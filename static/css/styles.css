@@ -11,6 +11,10 @@ body {
     text-align: center;
 }
 
+.result_background_image {
+    background-image: url("../images/cat-dog-result.jpg");
+}
+
 .margin-top {
     padding-top: 300px;
 }
