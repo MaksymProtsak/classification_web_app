@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <title>Title</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
 </head>
-<body>
+<body class="result_background_image">
 {% if label %}
 <div class="center">
   <p>This is a "{{ label }}"!</p>
