@@ -2,9 +2,20 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>$Title$</title>
+  <title>Title</title>
 </head>
 <body>
-$END$
+{% if label %}
+<div class="center">
+  <p>This is a "{{ label }}"!</p>
+  <p>Confidence: {{ probability }}%</p>
+</div>
+{% endif %}
+
+<div class="center">
+  <a href="/" style="text-decoration: none;">
+    <button>Back to Home Page</button>
+  </a>
+</div>
 </body>
 </html>
