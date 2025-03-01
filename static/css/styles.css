@@ -13,6 +13,7 @@ body {
 
 .result_background_image {
     background-image: url("../images/cat-dog-result.jpg");
+    height: 100vh;
 }
 
 .margin-top {
