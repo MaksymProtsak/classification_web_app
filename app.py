@@ -29,7 +29,7 @@ def upload_file():
 
     prob = round((float(prob) * 100), 2)
 
-    return render_template("result.html", label=label, probability=prob)
+    return render_template("result.html", label=label, probability=prob, image=upload_image_path)
 
 
 if __name__ == "__main__":
