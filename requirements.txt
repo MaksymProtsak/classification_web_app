@@ -13,6 +13,7 @@ google-auth==2.38.0
 google-auth-oauthlib==1.2.1
 google-pasta==0.2.0
 grpcio==1.70.0
+gunicorn==23.0.0
 h5py==3.13.0
 idna==3.10
 itsdangerous==2.2.0
@@ -42,8 +43,9 @@ six==1.17.0
 tensorboard==2.15.2
 tensorboard-data-server==0.7.2
 tensorflow==2.15.0
-tensorflow-estimator==2.15.0
 tensorflow-cpu==2.15.0
+tensorflow-estimator==2.15.0
+tensorflow-intel==2.15.0
 tensorflow-io-gcs-filesystem==0.31.0
 termcolor==2.5.0
 typing_extensions==4.12.2
