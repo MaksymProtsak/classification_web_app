@@ -8,6 +8,7 @@
 <body class="result_background_image">
 {% if label %}
 <div class="center margin-top">
+  <p><img src="{{ image }}" alt="{{ label }}" height="150"></p>
   <p class="p1">This is a <a class="text_color">{{ label }}</a>!</p>
   <p class="p1">Confidence: <a class="text_color">{{ probability }}%</a></p>
 </div>
