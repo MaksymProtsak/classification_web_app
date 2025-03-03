@@ -12,7 +12,7 @@ app = Flask(__name__)
 STATIC_FOLDER = "static"
 UPLOAD_FOLDER = "static/uploads/"
 
-cnn_model = tf.keras.models.load_model(STATIC_FOLDER + "/models/" + "save_at_49.keras")
+cnn_model = tf.keras.models.load_model(STATIC_FOLDER + "/models/" + "save_at_49_cpu.keras")
 
 
 @app.route("/")
