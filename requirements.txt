@@ -27,7 +27,7 @@ mdurl==0.1.2
 ml-dtypes==0.2.0
 namex==0.0.8
 numpy==1.26.4
-nvidia-cuda-runtime-cu12==12.8.57
+#nvidia-cuda-runtime-cu12==12.8.57
 oauthlib==3.2.2
 opt_einsum==3.4.0
 optree==0.14.1
@@ -47,10 +47,10 @@ tensorflow==2.15.0
 tensorflow-cpu==2.15.0
 tensorflow-estimator==2.15.0
 tensorflow-io-gcs-filesystem==0.31.0
-tensorrt==10.8.0.43
-tensorrt-cu12==10.8.0.43
-tensorrt_cu12_bindings==10.8.0.43
-tensorrt_cu12_libs==10.8.0.43
+#tensorrt==10.8.0.43
+#tensorrt-cu12==10.8.0.43
+#tensorrt_cu12_bindings==10.8.0.43
+#tensorrt_cu12_libs==10.8.0.43
 termcolor==2.5.0
 typing_extensions==4.12.2
 urllib3==2.3.0
