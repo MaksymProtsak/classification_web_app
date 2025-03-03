@@ -5,6 +5,8 @@ from flask import Flask, request, render_template
 
 from classifire import classify
 
+os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
+
 app = Flask(__name__)
 
 STATIC_FOLDER = "static"
@@ -15,7 +17,6 @@ cnn_model = tf.keras.models.load_model(STATIC_FOLDER + "/models/" + "save_at_49.
 
 @app.route("/")
 def home():
-    img_name = "/static/images/cat-dog.jpg"
     return render_template('index.html')
 
 
